@@ -65,6 +65,7 @@ var $itemsClone = $itemsHolder.clone();
 var $filterClass = "";
 $('#gallery ul.filter li').click(function(e) {
 e.preventDefault();
+$(this).find('a').addClass('selected');
 $filterClass = $(this).attr('data-value');
     if($filterClass == 'all'){ var $filters = $itemsClone.find('li'); }
     else { var $filters = $itemsClone.find('li[data-type='+ $filterClass +']'); }
