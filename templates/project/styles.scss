@@ -42,6 +42,13 @@ body {
 			width: 266px;
 			height: 53px;
 			display: block;
+
+			.strapline {
+				font-family: 'Open Sans', sans-serif;
+				font-size: 10px;
+				margin-left: 26px;
+				margin-left: 4px;
+			}
 		}
 
 		.nav {
@@ -106,9 +113,10 @@ body {
 	#home {
 		position: relative;
 		overflow: hidden;
-		height: 600px;
-		background: url('../../templates/img/ring1.jpg') 50% 45% no-repeat;
+		height: 700px;
+		background: url('../../templates/img/ring1.jpg') 50% 50% no-repeat;
 		width: 100%;
+		top: -10px;
 	}
 }
 

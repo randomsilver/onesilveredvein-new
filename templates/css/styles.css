@@ -29,6 +29,12 @@ body {
       width: 266px;
       height: 53px;
       display: block; }
+      body .navbar-fixed-top .navbar-inner h1 a.brand .strapline,
+      body .navbar-inner h1 a.brand .strapline {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 10px;
+        margin-left: 26px;
+        margin-left: 4px; }
     body .navbar-fixed-top .navbar-inner .nav,
     body .navbar-inner .nav {
       display: block;
@@ -74,9 +80,10 @@ body {
   body #home {
     position: relative;
     overflow: hidden;
-    height: 600px;
-    background: url("../../templates/img/ring1.jpg") 50% 45% no-repeat;
-    width: 100%; }
+    height: 700px;
+    background: url("../../templates/img/ring1.jpg") 50% 50% no-repeat;
+    width: 100%;
+    top: -10px; }
 
 .screen-reader-text {
   position: absolute;
