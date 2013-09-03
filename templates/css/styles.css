@@ -21,20 +21,25 @@ body {
     box-shadow: none;
     -webkit-box-shadow: none;
     -moz-box-shadow: none; }
-    body .navbar-fixed-top .navbar-inner h1 a.brand,
-    body .navbar-inner h1 a.brand {
-      margin-left: 0;
-      padding-left: 0;
-      background: url("../../templates/img/osv-logo.png") 0 0 no-repeat;
-      width: 266px;
-      height: 53px;
-      display: block; }
-      body .navbar-fixed-top .navbar-inner h1 a.brand .strapline,
-      body .navbar-inner h1 a.brand .strapline {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 10px;
-        margin-left: 26px;
-        margin-left: 4px; }
+    body .navbar-fixed-top .navbar-inner h1,
+    body .navbar-inner h1 {
+      line-height: 0; }
+      body .navbar-fixed-top .navbar-inner h1 a.brand,
+      body .navbar-inner h1 a.brand {
+        margin-left: 0;
+        margin-top: 7px;
+        padding-left: 0;
+        background: url("../../templates/img/osv-logo.png") 0 0 no-repeat;
+        width: 266px;
+        height: auto;
+        display: block; }
+        body .navbar-fixed-top .navbar-inner h1 a.brand .strapline,
+        body .navbar-inner h1 a.brand .strapline {
+          font-family: 'Open Sans', sans-serif;
+          font-size: 10px;
+          margin-left: 26px;
+          margin-left: 4px;
+          line-height: 9em; }
     body .navbar-fixed-top .navbar-inner .nav,
     body .navbar-inner .nav {
       display: block;
@@ -84,6 +89,9 @@ body {
     background: url("../../templates/img/ring1.jpg") 50% 50% no-repeat;
     width: 100%;
     top: -10px; }
+
+.footnote {
+  font-size: 0.8em; }
 
 .screen-reader-text {
   position: absolute;

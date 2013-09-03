@@ -35,19 +35,26 @@ body {
 		-webkit-box-shadow: none;
 		-moz-box-shadow: none;
 
-		h1 a.brand {
-			margin-left: 0;
-			padding-left: 0;
-			background: url('../../templates/img/osv-logo.png') 0 0 no-repeat;
-			width: 266px;
-			height: 53px;
-			display: block;
+		h1 {
 
-			.strapline {
-				font-family: 'Open Sans', sans-serif;
-				font-size: 10px;
-				margin-left: 26px;
-				margin-left: 4px;
+			line-height: 0; 
+
+			a.brand {
+				margin-left: 0;
+				margin-top: 7px;
+				padding-left: 0;
+				background: url('../../templates/img/osv-logo.png') 0 0 no-repeat;
+				width: 266px;
+				height: auto;
+				display: block;
+
+				.strapline {
+					font-family: 'Open Sans', sans-serif;
+					font-size: 10px;
+					margin-left: 26px;
+					margin-left: 4px;
+					line-height: 9em;
+				}
 			}
 		}
 
@@ -119,7 +126,9 @@ body {
 		top: -10px;
 	}
 }
-
+.footnote {
+	font-size: 0.8em;
+}
 .screen-reader-text {
 	position:absolute;
 	left:-10000px;
