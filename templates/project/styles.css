@@ -1,0 +1,149 @@
+/* line 15, styles.scss */
+body {
+  /*background: #F5F6F6;*/
+  background: white;
+  color: #55606a;
+  font-weight: 300;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 28px;
+  padding-top: 50px;
+  /* Add top padding for navbar-top-fixed */
+  padding-bottom: 30px;
+  /* Add top padding for navbar-top-fixed */
+}
+/* line 27, styles.scss */
+body .navbar-fixed-top .navbar-inner,
+body .navbar-inner {
+  background-color: white;
+  background-image: none;
+  border-radius: 0;
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+/* line 38, styles.scss */
+body .navbar-fixed-top .navbar-inner h1 a.brand,
+body .navbar-inner h1 a.brand {
+  margin-left: 0;
+  padding-left: 0;
+  background: url("../../templates/img/osv-logo.png") 0 0 no-repeat;
+  width: 266px;
+  height: 53px;
+  display: block;
+}
+/* line 47, styles.scss */
+body .navbar-fixed-top .navbar-inner .nav,
+body .navbar-inner .nav {
+  display: block;
+  position: relative;
+  margin-right: 10px;
+}
+/* line 52, styles.scss */
+body .navbar-fixed-top .navbar-inner .nav .icon-home,
+body .navbar-inner .nav .icon-home {
+  display: none;
+}
+/* line 56, styles.scss */
+body .navbar-fixed-top .navbar-inner .nav a,
+body .navbar-inner .nav a {
+  -webkit-transition: 1s all ease;
+  -moz-transition: 1s all ease;
+  transition: 1s all ease;
+  border-bottom: 3px solid white;
+  text-transform: uppercase;
+}
+/* line 64, styles.scss */
+body .navbar-fixed-top .navbar-inner .nav .active > a,
+body .navbar-inner .nav .active > a {
+  background-color: transparent;
+  box-shadow: none;
+  border-bottom: 3px solid #81983c;
+}
+/* line 69, styles.scss */
+body .navbar-fixed-top .navbar-inner .nav .active a:hover,
+body .navbar-inner .nav .active a:hover {
+  background-color: transparent;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+/* line 79, styles.scss */
+body .page {
+  padding: 50px 0 100px 0;
+  position: relative;
+  z-index: 99;
+}
+/* line 86, styles.scss */
+body .alt-page {
+  background-color: #81983c;
+}
+/* line 90, styles.scss */
+body .hero-unit {
+  background-color: white;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 98, styles.scss */
+body .nav-pills > li > a {
+  color: #55606a;
+}
+/* line 101, styles.scss */
+body .nav-pills > li > a a.selected {
+  color: #81983c;
+}
+/* line 106, styles.scss */
+body #home {
+  position: relative;
+  overflow: hidden;
+  height: 600px;
+  background: url("../../templates/img/ring1.jpg") 50% 45% no-repeat;
+  width: 100%;
+}
+
+/* line 115, styles.scss */
+.screen-reader-text {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* line 124, styles.scss */
+.modal.fade {
+  -webkit-transition: opacity 0.5s linear, 0.3s ease-out;
+  -moz-transition: opacity 0.5s linear, 0.3s ease-out;
+  -o-transition: opacity 0.5s linear, 0.3s ease-out;
+  transition: opacity 0.5s linear, 0.3s ease-out;
+  top: 25%;
+}
+
+/* Remove top padding when top navbar goes static in narrow viewports */
+@media (max-width: 979px) {
+  /* line 140, styles.scss */
+  body {
+    padding-top: 0;
+  }
+}
+@media (max-width: 480px) {
+  /* line 146, styles.scss */
+  .page {
+    /*padding-top: 0;*/
+  }
+  /* line 149, styles.scss */
+  .page .nav-collapse {
+    /*overflow: visible;
+    height: auto;*/
+  }
+  /* line 153, styles.scss */
+  .page .active > a {
+    border-bottom: none;
+  }
+}
