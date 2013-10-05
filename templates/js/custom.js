@@ -9,9 +9,16 @@ var OSV = {
 		$('#osv-navbar').scrollspy();
 	}
 
+	galleryLinks: function() {
+		$('#gallery a').on('click', function(){
+			console.log('a');
+			$(this).preventDefault();
+		})
+	}
 };
 
 OSV.scrollNavigation();
 OSV.startScrollSpy();
+OSV.galleryLinks();
 
 	

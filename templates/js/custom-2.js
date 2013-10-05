@@ -44,21 +44,31 @@ $(window).scroll(function(){
    }
 });
 function gallery(){
-  $('#dog1').click(function() { bootbox.alert('<img src="templates/img/dog1.jpg"><h4>Dog ipsum dolor sit amet</h4>'); });
-  $('#cat1').click(function() { bootbox.alert('<img src="templates/img/cat1.jpg"><h4>Cat ipsum dolor sit amet</h4>'); });
-  $('#bird1').click(function() { bootbox.alert('<img src="templates/img/bird1.jpg"><h4>Bird ipsum dolor sit amet</h4>'); });
-  $('#dog2').click(function() { bootbox.alert('<img src="templates/img/dog2.jpg"><h4>Dog ipsum dolor sit amet</h4>'); });
-  $('#cat2').click(function() { bootbox.alert('<img src="templates/img/cat2.jpg"><h4>Cat ipsum dolor sit amet</h4>'); });
-  $('#bird2').click(function() { bootbox.alert('<img src="templates/img/bird2.jpg"><h4>Bird ipsum dolor sit amet</h4>'); });
-  $('#dog3').click(function() { bootbox.alert('<img src="templates/img/dog3.jpg"><h4>Dog ipsum dolor sit amet</h4>'); });
-  $('#cat3').click(function() { bootbox.alert('<img src="templates/img/cat3.jpg"><h4>Cat ipsum dolor sit amet</h4>'); });
-  $('#bird3').click(function() { bootbox.alert('<img src="templates/img/bird3.jpg"><h4>Bird ipsum dolor sit amet</h4>'); });
-  $('#dog4').click(function() { bootbox.alert('<img src="templates/img/dog4.jpg"><h4>Dog ipsum dolor sit amet</h4>'); });
-  $('#cat4').click(function() { bootbox.alert('<img src="templates/img/cat4.jpg"><h4>Cat ipsum dolor sit amet</h4>'); });
-  $('#bird4').click(function() { bootbox.alert('<img src="templates/img/bird4.jpg"><h4>Bird ipsum dolor sit amet</h4>'); });
-  $('#dog5').click(function() { bootbox.alert('<img src="templates/img/dog5.jpg"><h4>Dog ipsum dolor sit amet</h4>'); });
-  $('#cat5').click(function() { bootbox.alert('<img src="templates/img/cat5.jpg"><h4>Cat ipsum dolor sit amet</h4>'); });
-  $('#bird5').click(function() { bootbox.alert('<img src="templates/img/bird5.jpg"><h4>Bird ipsum dolor sit amet</h4>'); });
+  $('#ring1').click(function() { bootbox.alert('<img src="templates/img/ring1.jpg"><h4>Fine silver ring with 24 carat gold embellishments</h4>'); });
+  $('#ring2').click(function() { bootbox.alert('<img src="templates/img/ring2.jpg"><h4>Fine silver ring, oxidised with 24 carat gold embellishments</h4>'); });
+  $('#ring3').click(function() { bootbox.alert('<img src="templates/img/ring3.jpg"><h4>Sterling silver adjustable ring, textured</h4>'); });
+  $('#bracelet1').click(function() { bootbox.alert('<img src="templates/img/bracelet1.jpg"><h4>Sterling Silver Half Persian 3-in-1 chainmaille bracelet</h4>'); });
+  $('#ring4').click(function() { bootbox.alert('<img src="templates/img/ring4.jpg"><h4>Fine silver ring, irregular edge, textured</h4>'); });
+  $('#ring5').click(function() { bootbox.alert('<img src="templates/img/ring5.jpg"><h4>Fine silver ring, irregular edge, textured</h4>'); });
+  $('#earring1').click(function() { bootbox.alert('<img src="templates/img/earring1.jpg"><h4>Fine silver earrings, textured</h4>'); });
+  $('#earring2').click(function() { bootbox.alert('<img src="templates/img/earring2.jpg"><h4>Fine silver earrings, textured</h4>'); });
+  $('#ring6').click(function() { bootbox.alert('<img src="templates/img/ring6.jpg"><h4>Fine silver ring, textured rectangular</h4>'); });
+  $('#ring7').click(function() { bootbox.alert('<img src="templates/img/ring7.jpg"><h4>Sterling silver adjustable ring, reticulated finish</h4>'); });
+  $('#bracelet2').click(function() { bootbox.alert('<img src="templates/img/bracelet2.jpg"><h4>Sterling silver Elf weave chain maille bracelet with Fine silver clasp</h4>'); });
+  $('#ring8').click(function() { bootbox.alert('<img src="templates/img/ring8.jpg"><h4>Fine silver ring, textured mid centre</h4>'); });
+  $('#ring9').click(function() { bootbox.alert('<img src="templates/img/ring9.jpg"><h4>Fine silver thick ring, heavily textured</h4>'); });
+  $('#ring10').click(function() { bootbox.alert('<img src="templates/img/ring10.jpg"><h4>Fine silver thick ring, heavily textured</h4>'); });
+  $('#earring3').click(function() { bootbox.alert('<img src="templates/img/earring3.jpg"><h4>Sterling silver free-form earrings</h4>'); });
+  $('#earring4').click(function() { bootbox.alert('<img src="templates/img/earring4.jpg"><h4>Fine silver, delicate drops, with 24 carat gold embellishments</h4>'); });
+  $('#ring11').click(function() { bootbox.alert('<img src="templates/img/ring11.jpg"><h4>Sterling silver adjustable ring, hammered texture</h4>'); });
+  $('#ring12').click(function() { bootbox.alert('<img src="templates/img/ring12.jpg"><h4>Fine silver ring, textured mid centre</h4>'); });
+  $('#ring13').click(function() { bootbox.alert('<img src="templates/img/ring13.jpg"><h4>Fine silver ring, textured rectangular</h4>'); });
+  $('#earring5').click(function() { bootbox.alert('<img src="templates/img/earring5.jpg"><h4>Sterling silver free-form earrings</h4>'); });
+  $('#earring6').click(function() { bootbox.alert('<img src="templates/img/earring6.jpg"><h4>Fine silver textured disc earrings</h4>'); });
+  $('#earring7').click(function() { bootbox.alert('<img src="templates/img/earring7.jpg"><h4>Fine silver long textured earrings</h4>'); });
+  $('#earring8').click(function() { bootbox.alert('<img src="templates/img/earring8.jpg"><h4>Fine silver large disc textured earrings</h4>'); });
+
+
 }
 var $itemsHolder = $('#gallery ul.thumbnails');
 var $itemsClone = $itemsHolder.clone(); 
@@ -76,3 +86,17 @@ $filterClass = $(this).attr('data-value');
       );
 });
 $(document).ready(gallery);
+
+$(document).ready(function(){
+
+  var galleryLink = function(){
+    $('#gallery a').on('click', function(e){
+      $('html, body').animate({
+        scrollTop: $("#gallery").offset().top - 50
+    }, 1000);
+
+    });
+  };
+
+  galleryLink();
+});
