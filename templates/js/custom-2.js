@@ -100,3 +100,19 @@ $(document).ready(function(){
 
   galleryLink();
 });
+
+var offsetHeight = 51;
+
+$('.nav-collapse').scrollspy({
+    offset: offsetHeight
+});
+
+$('.navbar li a').click(function (event) {
+    var scrollPos = $('body > .container').find($(this).attr('href')).offset().top - offsetHeight;
+    $('body,html').animate({
+        scrollTop: scrollPos
+    }, 500, function () {
+        $(".btn-navbar").click();
+    });
+    return false;
+});

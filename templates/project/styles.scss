@@ -377,15 +377,17 @@ body {
 
 }
 @media (max-width: 320px) {
-	.nav-collapse {
-		/*overflow: visible;
-		height: auto;*/
-		.nav > li {
-			float: left;
+	body {
+		.nav-collapse {
+			/*overflow: visible;
+			height: auto;*/
+			.nav > li {
+				float: left;
 
-			a:hover, 
-			a:focus {
-				background-color: #FFFFFF;
+				a:hover, 
+				a:focus {
+					background-color: #FFFFFF;
+				}
 			}
 		}
 	}

@@ -262,11 +262,11 @@ body {
     .page #home img {
       /*margin-top: 20% !important;*/ } }
 @media (max-width: 320px) {
-  .nav-collapse {
+  body .nav-collapse {
     /*overflow: visible;
     height: auto;*/ }
-    .nav-collapse .nav > li {
+    body .nav-collapse .nav > li {
       float: left; }
-      .nav-collapse .nav > li a:hover,
-      .nav-collapse .nav > li a:focus {
+      body .nav-collapse .nav > li a:hover,
+      body .nav-collapse .nav > li a:focus {
         background-color: #FFFFFF; } }
